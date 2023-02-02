@@ -1,4 +1,12 @@
-/* ESTILO PADRÃO P2 */
+/* Tópicos:
+
+1. Quadro
+2. Botão de Tentar
+3. Botão de Reiniciar
+4. Perssonagens
+5. Abaixo do Quadro
+
+*/
 
 Body {
     background-color: #1e1e1e;
@@ -12,6 +20,8 @@ header {
     text-align: center;
 }
 
+/* Quadro */
+
 section {
     background-image:url("assets/backgroundBlack.png");
     border-radius: 10px;
@@ -20,16 +30,6 @@ section {
     margin: auto;
     color: aliceblue;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.096);
-    border: normal 10px blue;
-
-}
-
-footer {
-    font-size: 10px ;
-    color: rgb(155, 155, 155);
-    text-align: center;
-    padding: 10px;
-    font-style: italic;
 }
 
 div {
@@ -61,7 +61,6 @@ div {
     text-align: center;
 }
 
-
 .numSpace {
     align-items: center;
     margin: 10%;
@@ -83,6 +82,8 @@ div {
     src: url('assets/Funkie\ Bunny.ttf') format('truetype');
   }
 
+/* Botão de Tentar */
+
 #tryB {
     padding: 8px;
     border-radius: 15px;
@@ -91,6 +92,21 @@ div {
     color: rgb(62, 38, 0);
     font-size: 20px;
 }
+
+#tryB:hover {
+    padding: 8px;
+    border-radius: 15px;
+    background-color: rgb(154, 131, 50);
+}
+
+#tryB:focus {
+    padding: 8px;
+    border-radius: 15px;
+    color: rgb(217, 217, 217);
+    background-color: rgb(70, 60, 24);
+}
+
+/* Botão de Reiniciar */
 
 #reloadB {
     padding: 8px;
@@ -112,25 +128,14 @@ div {
     margin: 10px;
 }
 
-#tryB:hover {
-    padding: 8px;
-    border-radius: 15px;
-    background-color: rgb(154, 131, 50);
-}
-
-#tryB:focus {
-    padding: 8px;
-    border-radius: 15px;
-    color: rgb(217, 217, 217);
-    background-color: rgb(70, 60, 24);
-}
-
 #reloadB:focus {
     padding: 8px;
     border-radius: 15px;
     color: rgb(217, 217, 217);
     background-color: rgb(70, 60, 24);
 }
+
+/* Personagens */
 
 #chts {
     display: inline;
@@ -140,6 +145,16 @@ div {
     margin: 23px;
 }
 
+/* Abaixo do Quadro */
+
 footer {
-    color: aliceblue;
+    font-size: 10px ;
+    color: rgba(240, 248, 255, 0.471);
+    text-align: center;
+    padding: 10px;
+    font-style: italic;
+}
+
+a {
+    color: rgba(240, 248, 255, 0.471);
 }

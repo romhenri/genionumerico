@@ -1,7 +1,8 @@
 var secretNumber = parseInt(Math.random() * 1001)
 
+console.log(secretNumber) 
 
-console.log(secretNumber)
+// Botão de Tentar
 
 function play() {
     console.log('Tentou!')
@@ -25,6 +26,8 @@ function play() {
         alert('Erro! o número é maior.')
     }
 }
+
+// Botão de Reiniciar
 
 function reload(){
     window.location.reload();
