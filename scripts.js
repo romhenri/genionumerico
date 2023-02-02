@@ -22,8 +22,10 @@ function play() {
 
     } else if (secretNumber <= chosenNumber) {
         alert('Erro! o número é menor.')
+        console.log('Errou!')
     } else if (secretNumber >= chosenNumber) {
         alert('Erro! o número é maior.')
+        console.log('Errou!')
     }
 }
 
