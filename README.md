@@ -1,2 +1,3 @@
 # genio-numerico
- Jogo de adivinhação para navegador.
+ Jogo de adivinhação para navegador. (JavaScript)
+ 
