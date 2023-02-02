@@ -1,0 +1,145 @@
+/* ESTILO PADRÃO P2 */
+
+Body {
+    background-color: #1e1e1e;
+    font: normal 15px
+     Verdana;
+}
+
+header {
+    font: normal 14px Verdana;
+    color: aliceblue;
+    text-align: center;
+}
+
+section {
+    background-image:url("assets/backgroundBlack.png");
+    border-radius: 10px;
+    padding: 20px;
+    width: 600px;
+    margin: auto;
+    color: aliceblue;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.096);
+    border: normal 10px blue;
+
+}
+
+footer {
+    font-size: 10px ;
+    color: rgb(155, 155, 155);
+    text-align: center;
+    padding: 10px;
+    font-style: italic;
+}
+
+div {
+    font-size: 20px;
+    text-align: center;
+}
+
+#msg {
+    margin-top: 5px;
+    margin-bottom: 25px;
+    background-color:#1d4394;
+    padding: 6px;
+    border-radius: 15px;
+    border: 2px solid rgb(0, 0, 0)
+}
+
+.numberSpace {
+    background-color:#1d4394;
+    width: 200px; 
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 5px;
+    margin-bottom: 25px;
+    padding: 6px;
+    padding-top: 9px;
+    border-radius: 15px;
+    border: 2px solid rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+
+.numSpace {
+    align-items: center;
+    margin: 10%;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    
+    
+}
+
+.numberBox {
+    margin: 0px;
+    width: 50px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+@font-face {
+    font-family: 'Funkie Bunny';
+    src: url('assets/Funkie\ Bunny.ttf') format('truetype');
+  }
+
+#tryB {
+    padding: 8px;
+    border-radius: 15px;
+    background-color: #edc949;
+    font-family: 'Funkie Bunny';
+    color: rgb(62, 38, 0);
+    font-size: 20px;
+}
+
+#reloadB {
+    padding: 8px;
+    border-radius: 15px;
+    background-color: rgb(237, 201, 73);
+    font-family: 'Funkie Bunny';
+    color: #3d2600;
+    font-size: 20px;
+    margin: 10px;
+}
+
+#reloadB:hover {
+    padding: 8px;
+    border-radius: 15px;
+    background-color: rgb(154, 131, 50);
+    font-family: 'Funkie Bunny';
+    color: rgb(62, 38, 0);
+    font-size: 20px;
+    margin: 10px;
+}
+
+#tryB:hover {
+    padding: 8px;
+    border-radius: 15px;
+    background-color: rgb(154, 131, 50);
+}
+
+#tryB:focus {
+    padding: 8px;
+    border-radius: 15px;
+    color: rgb(217, 217, 217);
+    background-color: rgb(70, 60, 24);
+}
+
+#reloadB:focus {
+    padding: 8px;
+    border-radius: 15px;
+    color: rgb(217, 217, 217);
+    background-color: rgb(70, 60, 24);
+}
+
+#chts {
+    display: inline;
+}
+
+.cht {
+    margin: 23px;
+}
+
+footer {
+    color: aliceblue;
+}
