@@ -1,10 +1,11 @@
 /* Tópicos:
 
-1. Quadro
-2. Botão de Tentar
-3. Botão de Reiniciar
-4. Perssonagens
-5. Abaixo do Quadro
+1. Quadro.
+2. Botão de Tentar.
+3. Botão de Reiniciar.
+4. Personagens.
+5. Inferior do Quadro.
+6. Abaixo do Quadro.
 
 */
 
@@ -27,7 +28,10 @@ section {
     border-radius: 10px;
     padding: 20px;
     width: 600px;
-    margin: auto;
+    margin-bottom: 0px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
     color: aliceblue;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.096);
 }
@@ -66,8 +70,6 @@ div {
     margin: 10%;
     margin-top: 5px;
     margin-bottom: 25px;
-    
-    
 }
 
 .numberBox {
@@ -80,7 +82,7 @@ div {
 @font-face {
     font-family: 'Funkie Bunny';
     src: url('assets/Funkie\ Bunny.ttf') format('truetype');
-  }
+}
 
 /* Botão de Tentar */
 
@@ -99,7 +101,7 @@ div {
     background-color: rgb(154, 131, 50);
 }
 
-#tryB:focus {
+#tryB:active {
     padding: 8px;
     border-radius: 15px;
     color: rgb(217, 217, 217);
@@ -115,24 +117,29 @@ div {
     font-family: 'Funkie Bunny';
     color: #3d2600;
     font-size: 20px;
-    margin: 10px;
+    margin: px;
 }
 
 #reloadB:hover {
-    padding: 8px;
-    border-radius: 15px;
     background-color: rgb(154, 131, 50);
-    font-family: 'Funkie Bunny';
     color: rgb(62, 38, 0);
-    font-size: 20px;
-    margin: 10px;
 }
 
-#reloadB:focus {
-    padding: 8px;
-    border-radius: 15px;
+#reloadB:active {
     color: rgb(217, 217, 217);
     background-color: rgb(70, 60, 24);
+}
+
+/* Botão de Reiniciar */
+
+#nextB {
+    display: none;
+    padding: 8px;
+    border-radius: 15px;
+    background-color: rgb(76, 68, 58);
+    font-family: 'Funkie Bunny';
+    color: rgba(217, 217, 217, 0.548);
+    font-size: 20px;
 }
 
 /* Personagens */
@@ -143,6 +150,34 @@ div {
 
 .cht {
     margin: 23px;
+}
+
+/* Inferior do Quadro */
+
+.container {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content:space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+}
+
+
+#item1 { /*___Tentativas___*/
+    text-align: left;
+}
+.tryTimes {/*___Tentativas___*/
+    color: rgba(240, 248, 255, 0.900);
+    font-family: 'Funkie Bunny';
+    font-size: 20px;
+    text-align: left;
+    color: #3d2600;
+    margin-bottom: 0px;
+}
+
+#item2 { /*___Botões___*/
+    text-align: center;
 }
 
 /* Abaixo do Quadro */
@@ -157,4 +192,5 @@ footer {
 
 a {
     color: rgba(240, 248, 255, 0.471);
+    text-decoration: none;
 }

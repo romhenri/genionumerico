@@ -23,7 +23,7 @@
 <!-- Texto e Interação -->
 
         <div id="msg">
-           Adivinhe o número de 1 a 1.000 para vencer o gênio!
+           Adivinhe o número de 1 a 100 para vencer o gênio!
         </div>
         <div class="numberSpace">
             Número <input type="number" class="numberBox" id="n"> 
@@ -36,22 +36,45 @@
 
         <div class="chts">
             <img src="assets/human-default.png" alt="Humano Padrão" id="humanDefault" class="cht">
-            <img src="assets/genius-default.png" alt="Gênio Padrão" id="geniusDefault"
+            <img src="assets/genius-default.png" alt="Gênio Padrão" id="genius"
             class="cht">
         </div>
+
+        <!-- Menu -->
+
+        <div class="container">
+            <div id="item1">
+                <p id="tryTimes" class="tryTimes">Tentativas: </p> 
+            </div>
+        
+            <div id="item2">
+                <input type="button" value="Reiniciar" id="reloadB" onclick="reload()">
+                <input type="button" value="Continuar" id="nextB" onclick="next()">
+            </div>
+        </div>
+
+
     </section>
 
-<!-- Abaixo do Quadro -->
-
-    <div>
-        <input type="button" value="Reiniciar" id="reloadB" onclick="reload()">
-    </div>
 
 <!-- Créditos -->
 
 <footer>
-    <p><a href="https://github.com/henri2023">Dev: @henri2023</a> | <a href="https://pt.pngtree.com/totallypic_42365356?type=1">Autoria das Imagens</a> | <a href="https://github.com/henri2023/genio-numerico">Versão 1.0.6</a></p>
+    <p><a href="https://github.com/henri2023">Dev: @henri2023</a> | <a href="https://pt.pngtree.com/totallypic_42365356?type=1">Autoria das Imagens</a> | <a href="https://github.com/henri2023/genio-numerico">Versão 1.1</a></p>
 </footer>
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
+
+<!--Ideias para Aplicar:
+
+- Introdução a história (Inspiração em "O Homem que Calculava").
+- Pontuação.
+- Comentários dos personagens (inspiração em "The Messenger").
+- Fase seguinte.
+- Gif dos personagens.
+- Animações.
+- Menu.
+- Ranking.
+
+-->
