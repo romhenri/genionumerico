@@ -40,7 +40,7 @@ Body {
 p, label {
     font-family: 'Comicbon';
     font-size: 18px;
-    letter-spacing: 1px;
+    letter-spacing: 1ox;
 }
 
 /* 1. Quadro */
@@ -147,6 +147,7 @@ div { text-align: center;}
 
 #item1 { /*___Tentativas___*/
     text-align: left;
+    font-family: 'Funkie'
 }
 .tryTimes {/*___Tentativas___*/
     color: rgba(240, 248, 255, 0.900);
@@ -189,7 +190,7 @@ a {
     #logoName {width: 90%;}  
     #logoNameDiv {width: 90%;}
     
-    section {max-width: 90%; padding: 5px;}
+    section {max-width: 90%;}
 
     footer {width: 80%; font-size: 12px;}
 
