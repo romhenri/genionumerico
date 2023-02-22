@@ -38,14 +38,17 @@ Body {
 }
 
 p, label {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Comicbon';
     font-size: 18px;
+    letter-spacing: 1px;
 }
 
 /* 1. Quadro */
 
 section {
-    background-image:url("assets/backgroundBlack.png");
+    background:url("assets/backgroundBlack.png")
+    no-repeat center center
+    ;
     margin: auto;
     border-radius: 10px;
     color: aliceblue;
@@ -84,8 +87,13 @@ div { text-align: center;}
 }
 
 @font-face {
-    font-family: 'Funkie Bunny';
-    src: url('assets/Funkie\ Bunny.ttf') format('truetype');
+    font-family: 'Funkie';
+    src: url('assets/FunkieBunny.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Comicbon';
+    src: url('assets/Comicbon.ttf');
 }
 
 /* 2. Botões */
@@ -94,7 +102,7 @@ div { text-align: center;}
     padding: 8px;
     border-radius: 15px;
     background-color: #edc949;
-    font-family: 'Funkie Bunny';
+    font-family: 'Funkie';
     color: rgb(62, 38, 0);
     font-size: 20px;
 } .button:hover {
