@@ -6,75 +6,76 @@
 4. Personagens.
 5. Inferior do Quadro.
 6. Abaixo do Quadro.
+7. Media Queries
 
 */
 
-Body {
-    background-color: #1e1e1e;
-    font: normal 15px
-     Verdana;
+* {
+    overflow-x: hidden;
+    margin: 0px;
 }
 
-header {
-    font: normal 14px Verdana;
-    color: aliceblue;
+header {width: 100%;}
+
+Body {
+    background-color: #1e1e1e;
+    font: normal 15px Verdana;
+    margin: 0px;
+    padding: 0px;
+
+    overflow-x: hidden;
+}
+
+#logoNameDiv {
     text-align: center;
+    margin: auto;
+}
+
+#logoName {
+    text-align: center;
+    margin: auto;
+    width: 30%;
+}
+
+p, label {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /* Quadro */
 
 section {
     background-image:url("assets/backgroundBlack.png");
+    margin: auto;
     border-radius: 10px;
-    padding: 20px;
-    width: 600px;
-    margin-bottom: 0px;
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: auto;
     color: aliceblue;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.096);
 }
 
-div {
-    font-size: 20px;
-    text-align: center;
-}
+div { text-align: center;}
 
-#msg {
-    margin-top: 5px;
-    margin-bottom: 25px;
+#msgSpace {
     background-color:#1d4394;
-    padding: 6px;
     border-radius: 15px;
-    border: 2px solid rgb(0, 0, 0)
+    border: 2px solid rgb(0, 0, 0);
+    margin-bottom: 10px;
+    padding: 5px;
 }
 
-.numberSpace {
+#numberSpace {
     background-color:#1d4394;
-    width: 200px; 
-    margin-left: auto;
-    margin-right: auto; 
-    margin-top: 5px;
-    margin-bottom: 25px;
-    padding: 6px;
-    padding-top: 9px;
     border-radius: 15px;
     border: 2px solid rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     text-align: center;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 30%;
+    margin: auto auto 10px auto;
 }
 
-.numSpace {
-    align-items: center;
-    margin: 10%;
-    margin-top: 5px;
-    margin-bottom: 25px;
-}
-
-.numberBox {
+.numberBox { /* Input */
     margin: 0px;
-    width: 50px;
+    width: 50px; 
     padding: 5px;
     border-radius: 10px;
 }
@@ -84,48 +85,22 @@ div {
     src: url('assets/Funkie\ Bunny.ttf') format('truetype');
 }
 
-/* Botão de Tentar */
+/* Botões */
 
-#tryB {
+.button {
     padding: 8px;
     border-radius: 15px;
     background-color: #edc949;
     font-family: 'Funkie Bunny';
     color: rgb(62, 38, 0);
     font-size: 20px;
-}
-
-#tryB:hover {
+} .button:hover {
     padding: 8px;
     border-radius: 15px;
     background-color: rgb(154, 131, 50);
-}
-
-#tryB:active {
+} .button:active {
     padding: 8px;
     border-radius: 15px;
-    color: rgb(217, 217, 217);
-    background-color: rgb(70, 60, 24);
-}
-
-/* Botão de Reiniciar */
-
-#reloadB {
-    padding: 8px;
-    border-radius: 15px;
-    background-color: rgb(237, 201, 73);
-    font-family: 'Funkie Bunny';
-    color: #3d2600;
-    font-size: 20px;
-    margin: px;
-}
-
-#reloadB:hover {
-    background-color: rgb(154, 131, 50);
-    color: rgb(62, 38, 0);
-}
-
-#reloadB:active {
     color: rgb(217, 217, 217);
     background-color: rgb(70, 60, 24);
 }
@@ -144,12 +119,10 @@ div {
 
 /* Personagens */
 
-#chts {
-    display: inline;
-}
+.cht {scale: 100%;}
 
-.cht {
-    margin: 23px;
+#genius {
+    margin-left: 60px;
 }
 
 /* Inferior do Quadro */
@@ -162,7 +135,6 @@ div {
     margin-right: 10px;
     margin-bottom: 0px;
 }
-
 
 #item1 { /*___Tentativas___*/
     text-align: left;
@@ -186,11 +158,76 @@ footer {
     font-size: 10px ;
     color: rgba(240, 248, 255, 0.471);
     text-align: center;
-    padding: 10px;
     font-style: italic;
+    margin: auto;
 }
 
 a {
     color: rgba(240, 248, 255, 0.471);
     text-decoration: none;
+}
+
+/* _____________ */
+/* Media Queries */
+
+@media screen and (max-width: 480px) {
+
+    #logoName {width: 90%;}  
+    #logoNameDiv {width: 90%;}
+    
+    section {
+        max-width: 90%;
+        padding: 5px;
+    }
+
+    footer {
+        width: 80%;
+    }
+
+    #msgSpace {margin: auto auto 5px auto;}
+    #numberSpace {margin: auto auto 5px auto;}
+
+    /* Objetos */
+    .cht {scale: 80%;
+    position: relative;
+    ;}
+
+    #genius {
+        margin-left: 0px;
+    }
+
+    /* Textos */
+    p {font-size: 18px}
+}
+
+@media screen and (min-width: 481px) {
+   
+    #logoNameDiv {
+    text-align: center;
+    margin: auto;
+    }
+
+    #logoName {
+    text-align: center;
+    margin: auto;
+    }
+
+    section {
+    width: 600px;
+
+    padding: 20px;
+    }
+
+    .numberSpace {
+    background-color:#1d4394;
+    width: 200px; 
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 5px;
+    margin-bottom: 25px;
+    padding: 6px;
+    padding-top: 9px;
+    }
+
+    /* Textos */
 }

@@ -14,22 +14,23 @@
 <!-- Logo -->
 
     <header> 
-        <div>
-            <img src="assets/logoName.png">
+        <div id="logoNameDiv">
+            <img src="assets/logoName.png" id="logoName">
         </div>
     </header>
     <section>
 
 <!-- Texto e Interação -->
 
-        <div id="msg">
-           Adivinhe o número de 1 a 100 para vencer o gênio!
+        <div id="msgSpace">
+
+            <p>Adivinhe o número de 1 a 100 para vencer o gênio!</p>
         </div>
-        <div class="numberSpace">
-            Número <input type="number" class="numberBox" id="n"> 
+        <div id="numberSpace">
+            <label for="n">Número </label><input type="number" class="numberBox" id="n"> 
         </div>
         <div id="buttonsSpace">
-            <input type="button" value="Tentar" id="tryB" onclick="play()">
+            <input type="button" value="Tentar" class="button" id="tryB" onclick="play()">
         </div>
 
 <!-- Personagens -->
@@ -40,7 +41,7 @@
             class="cht">
         </div>
 
-        <!-- Menu -->
+<!-- Menu -->
 
         <div class="container">
             <div id="item1">
@@ -48,8 +49,9 @@
             </div>
         
             <div id="item2">
-                <input type="button" value="Reiniciar" id="reloadB" onclick="reload()">
-                <input type="button" value="Continuar" id="nextB" onclick="next()">
+                <input type="button" value="Reiniciar"
+                class="button" id="reloadB" onclick="reload()">
+                <input type="button" value="Continuar" class="button" id="nextB" onclick="next()">
             </div>
         </div>
 
@@ -60,7 +62,7 @@
 <!-- Créditos -->
 
 <footer>
-    <p><a href="https://github.com/henri2023">Dev: @henri2023</a> | <a href="https://pt.pngtree.com/totallypic_42365356?type=1">Autoria das Imagens</a> | <a href="https://github.com/henri2023/genio-numerico">Versão 1.1</a></p>
+    <p><a href="https://github.com/henri2023">Dev: @henri2023</a> | <a href="https://pt.pngtree.com/totallypic_42365356?type=1">Autoria das Imagens</a> | <a href="https://github.com/henri2023/genio-numerico">Versão 1.2</a></p>
 </footer>
     <script src="script.js"></script>
 </body>
