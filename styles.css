@@ -121,7 +121,7 @@ div { text-align: center;}
     padding: 8px;
     border-radius: 15px;
     background-color: rgb(76, 68, 58);
-    font-family: 'Funkie Bunny';
+    font-family: 'Funkie';
     color: rgba(217, 217, 217, 0.548);
     font-size: 20px;
 }
@@ -147,11 +147,11 @@ div { text-align: center;}
 
 #item1 { /*___Tentativas___*/
     text-align: left;
-    font-family: 'Funkie'
+    font-family: 'Funkie';
 }
 .tryTimes {/*___Tentativas___*/
     color: rgba(240, 248, 255, 0.900);
-    font-family: 'Funkie Bunny';
+    font-family: 'Funkie';
     font-size: 20px;
     text-align: left;
     color: #3d2600;
@@ -185,6 +185,10 @@ a {
 
 }
 
+@media screen and (max-width: 730px) {
+    .cht {scale: 80%; position: relative;}
+}
+
 @media screen and (max-width: 480px) {
 
     #logoName {width: 90%;}  
@@ -198,7 +202,7 @@ a {
     #numberSpace {margin: auto auto 5px auto;}
 
     /* Objetos */
-    .cht {scale: 80%; position: relative;}
+    .cht {scale: 85%; position: relative;}
 
     #genius {margin-left: 0px;}
 
