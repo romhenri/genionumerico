@@ -195,7 +195,6 @@ a {
     #logoNameDiv {width: 90%;}
     
     section {max-width: 90%;}
-
     footer {width: 80%; font-size: 12px;}
 
     #msgSpace {margin: auto auto 5px auto;}
@@ -203,13 +202,15 @@ a {
 
     /* Objetos */
     .cht {scale: 85%; position: relative;}
-
     #genius {margin-left: 0px;}
 
     /* Textos */
     p {font-size: 18px}
+    #item1 {font-family: 'Funkie';}
 }
 
 @media screen and (max-width: 430px) {
-    .cht {scale: 70%; position: relative;}
+    .cht {scale: 80%; position: relative;}
+
+    #item1 {font-family: 'Funkie';}
 }
