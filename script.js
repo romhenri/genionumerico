@@ -3,10 +3,12 @@
 var secretNumber = parseInt(Math.random() * 100)
 const tryTimes = document.getElementById('tryTimes')
 var tries = 0
+var used = []
 
 tryTimes.innerHTML = ('Tentativas: ' + tries)
 
 console.log(secretNumber) 
+console.log(used);
 
 // Botão de Tentar
 
@@ -47,30 +49,68 @@ function play() {
 
 // Cenários de Erros
 
+        // Número Inválido
+
         } else if (chosenNumber == NaN || chosenNumber == 0) {
-        alert('Escolha um número para tentar.')
+            alert('Escolha um número para tentar.')
 
-        tries = tries - 1
+            tries = tries - 1
 
-        tryTimes.innerHTML = ('Tentativas: ' + tries)
+            tryTimes.innerHTML = ('Tentativas: ' + tries)
 
-        } else if (secretNumber <= chosenNumber) {
-        alert('Erro! o número é menor.')
-        console.log('Errou! o número menor.')
+        // Número Fora das Opções 
 
-            if (tries >= 5) {
-            var changeHuman = window.document.getElementById('humanDefault')
-            changeHuman.src='assets/human-not-good.png'
-            }
+        } else if (chosenNumber > 100) {
 
-        } else if (secretNumber >= chosenNumber) {
-        alert('Erro! o número é maior.')
-        console.log('Errou! o número maior.')
+            alert('O número pensado pelo gênio está entre 1 e 100.')
+            console.log('Número fora das opções.')
 
-            if (tries >= 5) {
-            var changeHuman = window.document.getElementById('humanDefault')
-            changeHuman.src='assets/human-not-good.png'
-            }
+            tries = tries - 1  
+            tryTimes.innerHTML = ('Tentativas: ' + tries)
+
+        } else if (used.includes(chosenNumber)) {
+            console.log('Repetição detectada!');
+            alert('Você já tentou esse número.')
+            
+            tries = tries - 1  
+            tryTimes.innerHTML = ('Tentativas: ' + tries)
+
+        } else if (!used.includes(chosenNumber)) {
+            // Número Maior que o Pensado
+
+            if (secretNumber <= chosenNumber) {
+
+                alert('Erro! o número é menor.')
+                console.log('Errou! o número menor.')
+
+                if (tries >= 5) {
+                var changeHuman = window.document.getElementById('humanDefault')
+                changeHuman.src='assets/human-not-good.png'
+
+                used.push(chosenNumber)
+                used = used.sort(function(a, b) {return a - b;});
+                console.log(used);}
+
+            } else if (secretNumber >= chosenNumber) {
+
+                alert('Erro! o número é maior.')
+                console.log('Errou! o número maior.')
+        
+                if (tries >= 5) {
+                var changeHuman = window.document.getElementById('humanDefault')
+                changeHuman.src='assets/human-not-good.png'
+                }
+        
+                used.push(chosenNumber)
+                used = used.sort(function(a, b) {return a - b;});
+                console.log(used);
+                 
+                }
+        
+
+        // Número Menor que o Pensado
+
+        
         }
 }
 
