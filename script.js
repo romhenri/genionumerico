@@ -33,18 +33,13 @@ function play() {
         if (tries == 1) {
             console.log('Acertou!')
 
-
-            setTimeout(function() {
             alert(`Você ganhou! com uma única tentativa, uau!`)
-            }, 150)
 
         } else if (tries >= 5) { 
             var changeHuman = window.document.getElementById('humanDefault')
             changeHuman.src='assets/human-default.png'
 
-            setTimeout(function() {
-                alert(`Você ganhou! com ${tries} tentativas, Parabéns!`)
-            }, 150)
+            alert(`Você ganhou! com ${tries} tentativas, Parabéns!`)
         }
 
 // Cenários de Erros
@@ -78,10 +73,12 @@ function play() {
         } else if (!used.includes(chosenNumber)) {
             // Número Maior que o Pensado
 
-            if (secretNumber <= chosenNumber) {
+            console.log('Tentativa Nova');
 
-                alert('Erro! o número é menor.')
-                console.log('Errou! o número menor.')
+            if (chosenNumber > secretNumber) {
+
+                alert('Erro! o número escolhido é maior que a resposta.')
+                console.log('Erro! o número escolhido é maior que a resposta.')
 
                 if (tries >= 5) {
                 var changeHuman = window.document.getElementById('humanDefault')
@@ -89,12 +86,12 @@ function play() {
 
                 used.push(chosenNumber)
                 used = used.sort(function(a, b) {return a - b;});
-                console.log(used);}
+                console.log(used);} else {}
 
-            } else if (secretNumber >= chosenNumber) {
+            } else if (chosenNumber < secretNumber) {
 
-                alert('Erro! o número é maior.')
-                console.log('Errou! o número maior.')
+                alert('Erro! o número escolhido é menor que a resposta.')
+                console.log('Erro! o número escolhido é menor que a resposta.')
         
                 if (tries >= 5) {
                 var changeHuman = window.document.getElementById('humanDefault')
