@@ -3,6 +3,7 @@
 var secretNumber = parseInt(Math.random() * 100)
 const tryTimes = document.getElementById('tryTimes')
 const MSG = document.getElementById('msgSpace')
+const NUM = document.getElementById('numberSpace')
 var tries = 0
 var used = []
 
@@ -32,10 +33,14 @@ function play() {
             change.src='assets/genius-sad.png'
 
             MSG.innerHTML = (`
-            <p>Você venceu o misterioso gênio!</p>
-            `)
+            <p>Você venceu o misterioso gênio!</p>`)
             MSG.style.backgroundColor = "#edc949"
             MSG.style.color = "rgb(62, 38, 0)"
+            NUM.style.backgroundColor = "#edc949"
+            NUM.style.color = "rgb(62, 38, 0)"
+            NUM.style.fontFamily = "Comicbon"
+            NUM.style.fontSize = "20px"
+            NUM.innerHTML = (`Número ${chosenNumber}`)
 
         if (tries == 1) {
             console.log('Acertou!')
