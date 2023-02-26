@@ -2,6 +2,7 @@
 
 var secretNumber = parseInt(Math.random() * 100)
 const tryTimes = document.getElementById('tryTimes')
+const MSG = document.getElementById('msgSpace')
 var tries = 0
 var used = []
 
@@ -26,25 +27,32 @@ function play() {
 
 // Cenários de Acertos
 
-    if (secretNumber == chosenNumber) {
+    if (chosenNumber == secretNumber) {
         let change = window.document.getElementById('genius')
             change.src='assets/genius-sad.png'
+
+            MSG.innerHTML = (`
+            <p>Você venceu o misterioso gênio!</p>
+            `)
+            MSG.style.backgroundColor = "#edc949"
+            MSG.style.color = "rgb(62, 38, 0)"
 
         if (tries == 1) {
             console.log('Acertou!')
 
-            alert(`Você ganhou! com uma única tentativa, uau!`)
+            alert('Você ganhou! com uma única tentativa, uau!')
 
-        } else if (tries >= 5) { 
+        } else if (tries > 1) {
             var changeHuman = window.document.getElementById('humanDefault')
             changeHuman.src='assets/human-default.png'
 
             alert(`Você ganhou! com ${tries} tentativas, Parabéns!`)
-        }
 
+        }
+        
 // Cenários de Erros
 
-        // Número Inválido
+// Número Inválido
 
         } else if (chosenNumber == NaN || chosenNumber == 0) {
             alert('Escolha um número para tentar.')
@@ -53,7 +61,7 @@ function play() {
 
             tryTimes.innerHTML = ('Tentativas: ' + tries)
 
-        // Número Fora das Opções 
+            // Número Fora das Opções 
 
         } else if (chosenNumber > 100) {
 
@@ -71,7 +79,8 @@ function play() {
             tryTimes.innerHTML = ('Tentativas: ' + tries)
 
         } else if (!used.includes(chosenNumber)) {
-            // Número Maior que o Pensado
+
+// Secreto < Escolhido
 
             console.log('Tentativa Nova');
 
@@ -90,6 +99,8 @@ function play() {
 
             } else if (chosenNumber < secretNumber) {
 
+// Secreto > Escolhido
+
                 alert('Erro! o número escolhido é menor que a resposta.')
                 console.log('Erro! o número escolhido é menor que a resposta.')
         
@@ -100,14 +111,8 @@ function play() {
         
                 used.push(chosenNumber)
                 used = used.sort(function(a, b) {return a - b;});
-                console.log(used);
-                 
+                console.log(used);                 
                 }
-        
-
-        // Número Menor que o Pensado
-
-        
         }
 }
 
@@ -118,3 +123,8 @@ function reload(){
 } 
 
 // Botão de Continuar
+
+function win() {
+console.log('VITÓRIAAAAA');
+alert('Deu certo')
+}

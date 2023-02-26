@@ -98,6 +98,11 @@ div { text-align: center;}
 
 /* 2. Botões */
 
+#item2 {
+    display: flex;
+    gap: 10px;
+}
+
 .button {
     padding: 8px;
     border-radius: 15px;
@@ -128,7 +133,7 @@ div { text-align: center;}
 
 /* 3. Personagens */
 
-.cht {scale: 100%;}
+.cht {scale: 100%; margin-bottom: 10px;}
 
 #chtsSpace {
     display: flex;
