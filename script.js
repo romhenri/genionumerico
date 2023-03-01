@@ -4,6 +4,7 @@ var secretNumber = parseInt(Math.random() * 100)
 const tryTimes = document.getElementById('tryTimes')
 const MSG = document.getElementById('msgSpace')
 const NUM = document.getElementById('numberSpace')
+const TRY = document.getElementById('tryB')
 var tries = 0
 var used = []
 
@@ -41,6 +42,8 @@ function play() {
             NUM.style.fontFamily = "Comicbon"
             NUM.style.fontSize = "20px"
             NUM.innerHTML = (`Número ${chosenNumber}`)
+            TRY.style.opacity = 0
+
 
         if (tries == 1) {
             console.log('Acertou!')
@@ -129,7 +132,7 @@ function reload(){
 
 // Botão de Continuar
 
-function win() {
-console.log('VITÓRIAAAAA');
-alert('Deu certo')
-}
+// function win() {
+// console.log('VITÓRIAAAAA');
+// alert('Deu certo')
+// }

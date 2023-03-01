@@ -104,6 +104,7 @@ div { text-align: center;}
     font-family: 'Funkie';
     color: rgb(62, 38, 0);
     font-size: 20px;
+
 } .button:hover {
     padding: 8px;
     border-radius: 15px;
@@ -114,6 +115,10 @@ div { text-align: center;}
     color: rgb(217, 217, 217);
     background-color: rgb(70, 60, 24);
 }
+
+/* #tryB {
+    display: none;
+} */
 
 #nextB {
     display: none;
