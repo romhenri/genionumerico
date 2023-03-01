@@ -116,10 +116,6 @@ div { text-align: center;}
     background-color: rgb(70, 60, 24);
 }
 
-/* #tryB {
-    display: none;
-} */
-
 #nextB {
     display: none;
     padding: 8px;
@@ -175,7 +171,9 @@ footer {
     margin: 3vh;
 }
 
-a {color: rgba(240, 248, 255, 0.471); text-decoration: none;}
+a {color: rgba(240, 248, 255, 0.471); text-decoration: none; transition: 0.3s;} a:hover {
+    color: rgba(240, 248, 255, 0.842)
+}
 
 /* 6. Media Queries */
 
