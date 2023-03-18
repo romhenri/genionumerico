@@ -14,7 +14,9 @@
     padding: 0px;
 }
 
-header {width: 100%;}
+header {
+    width: 100%;
+}
 
 Body {
     background-color: #1e1e1e;
@@ -40,9 +42,7 @@ p, label {
 /* 1. Quadro */
 
 section {
-    background:url("assets/backgroundBlack.png")
-    no-repeat center center
-    ;
+    background: url("assets/backgroundBlack.png") no-repeat center center;
     margin: auto;
     border-radius: 10px;
     color: aliceblue;
@@ -52,10 +52,12 @@ section {
     padding: 20px;
 }
 
-div { text-align: center;}
+div {
+    text-align: center;
+}
 
 #msgSpace {
-    background-color:#1d4394;
+    background-color: #1d4394;
     border-radius: 15px;
     border: 2px solid rgb(0, 0, 0);
     margin-bottom: 10px;
@@ -63,7 +65,7 @@ div { text-align: center;}
 }
 
 #numberSpace {
-    background-color:#1d4394;
+    background-color: #1d4394;
     border-radius: 15px;
     border: 2px solid rgb(0, 0, 0);
     color: rgb(255, 255, 255);
@@ -73,11 +75,13 @@ div { text-align: center;}
     margin: auto auto 10px auto;
 }
 
-.numberBox { /* Input */
+.numberBox {
+    /* Input */
     margin: 0px;
-    width: 50px; 
+    width: 50px;
     padding: 5px;
     border-radius: 10px;
+    outline: none;
 }
 
 @font-face {
@@ -98,18 +102,23 @@ div { text-align: center;}
 }
 
 .button {
-    padding: 8px; cursor: pointer;
+    padding: 8px;
+    cursor: pointer;
     border-radius: 15px;
     background-color: #edc949;
     font-family: 'Funkie';
     color: rgb(62, 38, 0);
     font-size: 20px;
 
-} .button:hover {
+}
+
+.button:hover {
     padding: 8px;
     border-radius: 15px;
     background-color: rgb(154, 131, 50);
-} .button:active {
+}
+
+.button:active {
     padding: 8px;
     border-radius: 15px;
     color: rgb(217, 217, 217);
@@ -128,7 +137,10 @@ div { text-align: center;}
 
 /* 3. Personagens */
 
-.cht {scale: 100%; margin-bottom: 10px;}
+.cht {
+    scale: 100%;
+    margin-bottom: 10px;
+}
 
 #chtsSpace {
     display: flex;
@@ -140,15 +152,18 @@ div { text-align: center;}
 
 .container {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: end;
 }
 
-#item1 { /*___Tentativas___*/
+#item1 {
+    /*___Tentativas___*/
     text-align: left;
     font-family: 'Funkie';
 }
-.tryTimes {/*___Tentativas___*/
+
+.tryTimes {
+    /*___Tentativas___*/
     color: rgba(240, 248, 255, 0.900);
     font-family: 'Funkie';
     font-size: 20px;
@@ -157,56 +172,100 @@ div { text-align: center;}
     margin-bottom: 0px;
 }
 
-#item2 { /*___Botões___*/
+#item2 {
+    /*___Botões___*/
     text-align: center;
 }
 
 /* 5. Abaixo do Quadro */
 
 footer {
-    font-size: 10px ;
+    font-size: 10px;
     color: rgba(240, 248, 255, 0.471);
     text-align: center;
     font-style: italic;
     margin: 3vh;
 }
 
-a {color: rgba(240, 248, 255, 0.471); text-decoration: none; transition: 0.3s;} a:hover {
+a {
+    color: rgba(240, 248, 255, 0.471);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
     color: rgba(240, 248, 255, 0.842)
 }
 
 /* 6. Media Queries */
 
 @media screen and (max-width: 940px) {
-    section {width: 80%;}
+    section {
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 730px) {
-    .cht {scale: 80%; position: relative;}
+    .cht {
+        scale: 80%;
+        position: relative;
+    }
 }
 
 @media screen and (max-width: 480px) {
 
-    #logoName {width: 90%;}  
-    #logoNameDiv {width: 90%;}
-    
-    section {max-width: 90%;}
-    footer {width: 80%; font-size: 12px;}
+    #logoName {
+        width: 90%;
+    }
 
-    #msgSpace {margin: auto auto 5px auto;}
-    #numberSpace {margin: auto auto 5px auto;}
+    #logoNameDiv {
+        width: 90%;
+    }
+
+    section {
+        max-width: 90%;
+    }
+
+    footer {
+        width: 80%;
+        font-size: 12px;
+    }
+
+    #msgSpace {
+        margin: auto auto 5px auto;
+    }
+
+    #numberSpace {
+        margin: auto auto 5px auto;
+    }
 
     /* Objetos */
-    .cht {scale: 85%; position: relative;}
-    #genius {margin-left: 0px;}
+    .cht {
+        scale: 85%;
+        position: relative;
+    }
+
+    #genius {
+        margin-left: 0px;
+    }
 
     /* Textos */
-    p {font-size: 18px}
-    #item1 {font-family: 'Funkie';}
+    p {
+        font-size: 18px
+    }
+
+    #item1 {
+        font-family: 'Funkie';
+    }
 }
 
 @media screen and (max-width: 430px) {
-    .cht {scale: 80%; position: relative;}
+    .cht {
+        scale: 80%;
+        position: relative;
+    }
 
-    #item1 {font-family: 'Funkie';}
+    #item1 {
+        font-family: 'Funkie';
+    }
 }
