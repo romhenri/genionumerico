@@ -1,68 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gênio Numérico</title>
-    <link rel="icon" href="assets/icon.png">
-    <link rel="stylesheet" href="styles.css"></style>
-    <link rel="stylesheet" src="assets/Funkie Bunny.ttf">
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Gênio Numérico</title>
+		<link rel="icon" href="assets/icon.png" />
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" src="assets/Funkie Bunny.ttf" />
+	</head>
+	<body onload="load()">
+		<!-- Logo -->
 
-<!-- Logo -->
+		<header>
+			<div id="logoNameDiv" style="text-align: center; margin: auto;">
+				<img
+					src="assets/logoName.png"
+					id="logoName"
+					alt="Gênio Numérico"
+				/>
+			</div>
+		</header>
+		<section>
+			<!-- Texto e Interação -->
 
-    <header> 
-        <div id="logoNameDiv" style="text-align: center;
-        margin: auto;">
-            <img src="assets/logoName.png" id="logoName" alt="Gênio Numérico">
-        </div>
-    </header>
-    <section>
+			<div id="msgSpace">
+				<p>Adivinhe o número de 1 a 100 para vencer o gênio!</p>
+			</div>
+			<div id="numberSpace">
+				<label for="n">Número </label
+				><input type="number" class="numberBox" id="n" autofocus />
+			</div>
+			<div id="buttonsSpace">
+				<input
+					type="button"
+					value="Tentar"
+					class="button"
+					id="tryB"
+					onclick="play()"
+				/>
+			</div>
 
-<!-- Texto e Interação -->
+			<!-- Personagens -->
 
-        <div id="msgSpace">
-            <p>Adivinhe o número de 1 a 100 para vencer o gênio!</p>
-        </div>
-        <div id="numberSpace">
-            <label for="n">Número </label><input type="number" class="numberBox" id="n" autofocus> 
-        </div>
-        <div id="buttonsSpace">
-            <input type="button" value="Tentar" class="button" id="tryB" onclick="play()">
-        </div>
+			<div id="chtsSpace">
+				<img
+					src="assets/human-default.png"
+					alt="Viajante"
+					id="humanDefault"
+					class="cht"
+				/>
+				<img
+					src="assets/genius-default.png"
+					alt="Gênio Misterioso"
+					id="genius"
+					class="cht"
+				/>
+			</div>
 
-<!-- Personagens -->
+			<!-- Menu -->
 
-        <div id="chtsSpace">
-            <img src="assets/human-default.png" alt="Viajante" id="humanDefault" class="cht">
-            <img src="assets/genius-default.png" alt="Gênio Misterioso" id="genius"
-            class="cht">
-        </div>
+			<div class="container">
+				<div id="item1">
+					<p id="tryTimes" class="tryTimes">Tentativas:</p>
+				</div>
 
-<!-- Menu -->
+				<div id="item2">
+					<input
+						type="button"
+						value="Reiniciar"
+						class="button"
+						id="reloadB"
+						onclick="reload()"
+					/>
+					<input
+						type="button"
+						value="Continuar"
+						class="button"
+						id="nextB"
+						onclick="next()"
+					/>
+				</div>
+			</div>
+		</section>
 
-        <div class="container">
-            <div id="item1">
-                <p id="tryTimes" class="tryTimes">Tentativas: </p> 
-            </div>
-        
-            <div id="item2">
-                <input type="button" value="Reiniciar"
-                class="button" id="reloadB" onclick="reload()">
-                <input type="button" value="Continuar" class="button" id="nextB" onclick="next()">
-            </div>
-        </div>
-    </section>
+		<div id="info"></div>
 
-<!-- Créditos -->
+		<!-- Créditos -->
 
-    <footer>
-        <a href="https://github.com/henri2023">Dev: @henri2023</a> | <a href="https://pt.pngtree.com/totallypic_42365356?type=1">Autoria das Imagens</a> | <a href="https://github.com/henri2023/genio-numerico">Versão 1.3.7</a>
-    </footer>
-    <script src="script.js"></script>
-</body>
+		<footer>
+			<a href="https://github.com/henri2023">Dev: @henri2023</a> |
+			<a href="https://pt.pngtree.com/totallypic_42365356?type=1"
+				>Autoria das Imagens</a
+			>
+			|
+			<a href="https://github.com/henri2023/genio-numerico"
+				>Versão 1.4.0</a
+			>
+		</footer>
+		<script src="script.js"></script>
+	</body>
 </html>
 
 <!--Ideias para Aplicar:
