@@ -30,13 +30,12 @@ Body {
 #logoName {
     text-align: center;
     margin: auto;
-    width: 30%;
+    width: 350px;
 }
 
 p, label {
     font-family: 'Comicbon';
     font-size: 18px;
-    letter-spacing: 1ox;
 }
 
 /* 1. Quadro */

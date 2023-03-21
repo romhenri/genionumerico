@@ -42,13 +42,13 @@ function play() {
 		NUM.style.fontSize = "20px";
 		NUM.innerHTML = `Número ${chosenNumber}`;
 		TRY.style.opacity = 0;
-		load();
 
 		if (localStorage.record == undefined) {
 			localStorage.setItem("record", tries);
 		} else if (tries < localStorage.record) {
 			localStorage.setItem("record", tries);
 		}
+		load();
 
 		if (tries == 1) {
 			console.log("Acertou!");
