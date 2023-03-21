@@ -44,7 +44,9 @@ function play() {
 		TRY.style.opacity = 0;
 		load();
 
-		if (tries < localStorage.record) {
+		if (localStorage.record == undefined) {
+			localStorage.setItem("record", tries);
+		} else if (tries < localStorage.record) {
 			localStorage.setItem("record", tries);
 		}
 
