@@ -162,7 +162,11 @@ function load() {
 		}
 	}
 }
-// function win() {
-// console.log('VITÓRIAAAAA');
-// alert('Deu certo')
-// }
+
+// Music System
+
+var myMusic = new Audio("assets/turkish-beat.mp3");
+
+function playMusic() {
+	myMusic.play();
+}

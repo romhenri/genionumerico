@@ -46,7 +46,6 @@ section {
     border-radius: 10px;
     color: aliceblue;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.096);
-
     width: 600px;
     padding: 20px;
 }
@@ -55,21 +54,17 @@ div {
     text-align: center;
 }
 
-#msgSpace {
+#msgSpace, #numberSpace {
     background-color: #1d4394;
     border-radius: 15px;
     border: 2px solid rgb(0, 0, 0);
     margin-bottom: 10px;
     padding: 5px;
+    text-align: center;
 }
 
 #numberSpace {
-    background-color: #1d4394;
-    border-radius: 15px;
-    border: 2px solid rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
     text-align: center;
-    padding: 5px;
     width: 30%;
     margin: auto auto 10px auto;
 }
@@ -112,14 +107,10 @@ div {
 }
 
 .button:hover {
-    padding: 8px;
-    border-radius: 15px;
     background-color: rgb(154, 131, 50);
 }
 
 .button:active {
-    padding: 8px;
-    border-radius: 15px;
     color: rgb(217, 217, 217);
     background-color: rgb(70, 60, 24);
 }
