@@ -5,23 +5,31 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Gênio Numérico</title>
-		<link rel="icon" href="assets/icon.png" />
-		<link rel="stylesheet" href="styles.css" />
-		<link rel="stylesheet" src="assets/Funkie Bunny.ttf" />
+		<link rel="icon" href="src/img/icon.png" />
+		<link rel="stylesheet" href="src/css/styles.css" />
+		<script
+			src="https://kit.fontawesome.com/eacbb44f8a.js"
+			crossorigin="anonymous"
+		></script>
 	</head>
-	<body onload="playMusic()">
+	<body>
 		<!-- Logo -->
 
 		<header>
 			<div id="logoNameDiv" style="text-align: center; margin: auto;">
 				<img
-					src="assets/logoName.png"
+					src="src/img/logoName.png"
 					id="logoName"
 					alt="Gênio Numérico"
 				/>
 			</div>
 		</header>
-		<section onmouseenter="music()">
+
+		<section
+			id="gameplay"
+			class="frame-gameplay"
+			onmouseenter="playMusic()"
+		>
 			<!-- Texto e Interação -->
 
 			<div id="msgSpace">
@@ -45,13 +53,13 @@
 
 			<div id="chtsSpace">
 				<img
-					src="assets/human-default.png"
+					src="src/img/human-default.png"
 					alt="Viajante"
 					id="humanDefault"
 					class="cht"
 				/>
 				<img
-					src="assets/genius-default.png"
+					src="src/img/genius-default.png"
 					alt="Gênio Misterioso"
 					id="genius"
 					class="cht"
@@ -84,8 +92,6 @@
 			</div>
 		</section>
 
-		<div id="info"></div>
-
 		<!-- Créditos -->
 
 		<footer>
@@ -101,11 +107,9 @@
 				>Música por @Muzaproduction
 			</a>
 			|
-			<a href="https://github.com/henri2023/genio-numerico"
-				>Versão 1.4.3</a
-			>
+			<a href="https://github.com/henri2023/genio-numerico">Versão 1.5</a>
 		</footer>
-		<script src="script.js"></script>
+		<script src="src/js/script.js"></script>
 	</body>
 </html>
 

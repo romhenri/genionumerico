@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Gênio Numérico</title>
+		<link rel="icon" href="assets/icon.png" />
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" src="assets/Funkie Bunny.ttf" />
+	</head>
+	<body onload="playMusic()">
+		<!-- Logo -->
+
+		<header>
+			<div id="logoNameDiv" style="text-align: center; margin: auto;">
+				<img
+					src="assets/logoName.png"
+					id="logoName"
+					alt="Gênio Numérico"
+				/>
+			</div>
+		</header>
+		<section>
+			<!-- onmouseenter="music()" -->
+			<!-- Texto e Interação -->
+
+			<div id="msgSpace">
+				<p>Adivinhe o número de 1 a 100 para vencer o gênio!</p>
+			</div>
+			<div id="numberSpace">
+				<label for="n">Número </label
+				><input type="number" class="numberBox" id="n" autofocus />
+			</div>
+			<div id="buttonsSpace">
+				<input
+					type="button"
+					value="Tentar"
+					class="button"
+					id="tryB"
+					onclick="play()"
+				/>
+			</div>
+
+			<!-- Personagens -->
+
+			<div id="chtsSpace">
+				<img
+					src="assets/human-default.png"
+					alt="Viajante"
+					id="humanDefault"
+					class="cht"
+				/>
+				<img
+					src="assets/genius-default.png"
+					alt="Gênio Misterioso"
+					id="genius"
+					class="cht"
+				/>
+			</div>
+
+			<!-- Menu -->
+
+			<div class="container">
+				<div id="item1">
+					<p id="tryTimes" class="tryTimes">Tentativas:</p>
+				</div>
+
+				<div id="item2">
+					<input
+						type="button"
+						value="Reiniciar"
+						class="button"
+						id="reloadB"
+						onclick="reload()"
+					/>
+					<input
+						type="button"
+						value="Continuar"
+						class="button"
+						id="nextB"
+						onclick="next()"
+					/>
+				</div>
+			</div>
+		</section>
+
+		<div id="info"></div>
+
+		<!-- Créditos -->
+
+		<footer>
+			<a href="https://www.linkedin.com/in/romulo-henri/"
+				>Desenvolvido por Rômulo Henri</a
+			>
+			|
+			<a href="https://pt.pngtree.com/totallypic_42365356?type=1"
+				>Imagens por @totallypic
+			</a>
+			|
+			<a href="https://pixabay.com/users/muzaproduction-24990238/"
+				>Música por @Muzaproduction
+			</a>
+			|
+			<a href="https://github.com/henri2023/genio-numerico"
+				>Versão 1.4.3</a
+			>
+		</footer>
+		<script src="script.js"></script>
+	</body>
+</html>
+
+<!--Ideias para Aplicar:
+
+- Introdução a história (Inspiração em "O Homem que Calculava").
+- Pontuação.
+- Comentários dos personagens (inspiração em "The Messenger").
+- Fase seguinte.
+- Gif dos personagens.
+- Animações.
+- Menu.
+- Ranking.
+
+-->
