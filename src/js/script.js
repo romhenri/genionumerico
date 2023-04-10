@@ -165,12 +165,12 @@ function load() {
 
 // Music System
 
-// var myMusic = new Audio("src/music/turkish-beat.mp3");
+var myMusic = new Audio("src/music/turkish-beat.mp3");
 
 // myMusic.autoplay = true;
 // myMusic.load();
 
 function playMusic() {
 	myMusic.play();
-	myMusic.volume = 0.4;
+	myMusic.volume = 0.2;
 }
