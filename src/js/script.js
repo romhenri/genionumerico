@@ -170,7 +170,19 @@ var myMusic = new Audio("src/music/turkish-beat.mp3");
 // myMusic.autoplay = true;
 // myMusic.load();
 
+var vol = 0.2;
+
 function playMusic() {
 	myMusic.play();
-	myMusic.volume = 0.2;
+	myMusic.volume = vol;
 }
+
+const muteBtn = document.getElementById("muteBtn");
+
+muteBtn.addEventListener("click", () => {
+	console.log("Sem Música!");
+
+	vol = 0;
+
+	playMusic();
+});

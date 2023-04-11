@@ -24,6 +24,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 -   [x] Música de Fundo.
 -   [ ] Menu.
 -   [ ] Ranking.
+-   [ ] Configurações
 -   [ ] Animações.
 
 <hr>
@@ -37,7 +38,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
   <img alt="Ts" height="54" width="72" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg">    <img align="center" alt="React" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg">
 </a> -->
 
-  <a href="https://github.com/romhenri/html" target="_blank">
+<a href="https://github.com/romhenri/html" target="_blank">
   <img alt="HTML" height="54" width="72" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"></a>
 
 <a href="https://github.com/romhenri/css" target="_blank">
@@ -45,7 +46,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 <a href="#">
    <img alt="Sass" height="54" width="72" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
-  </a>
+</a>
 
 <!-- <a href="https://github.com/romhenri/css/tree/main/bootstrap" target="_blank">
   <img alt="Bootstrap" height="54" width="72" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"></a> -->

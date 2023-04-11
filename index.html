@@ -32,10 +32,13 @@
 		>
 			<!-- Texto e Interação -->
 
-			<div id="msgSpace">
-				<p>Adivinhe o número de 1 a 100 para vencer o gênio!</p>
+			<div id="msgSpace" class="ui inline">
+				<p>
+					Adivinhe o número de 1 a 100 para vencer o gênio!
+					<i id="muteBtn" class="fas fa-volume-xmark"></i>
+				</p>
 			</div>
-			<div id="numberSpace">
+			<div id="numberSpace" class="ui">
 				<label for="n">Número </label
 				><input type="number" class="numberBox" id="n" autofocus />
 			</div>
@@ -110,9 +113,15 @@
 			</a>
 			|
 			<a href="https://github.com/henri2023/genio-numerico"
-				>Versão 1.5.1</a
+				>Versão 1.5.2</a
 			>
 		</footer>
+
+		<section id="frameTest" class="frame-test test">
+			<button class="btn">Teste</button>
+			<input type="button" class="btn" value="Teste" />
+		</section>
+
 		<script src="src/js/script.js"></script>
 	</body>
 </html>

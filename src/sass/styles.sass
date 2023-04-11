@@ -1,10 +1,17 @@
+@import 'variables'
+@import 'mixins'
 @import 'old-styles.sass'
 @import 'components'
-@import 'variables'
-@import 'gameplay'
+@import 'frame-gameplay'
+@import 'frame-test'
 
-// sass --watch --style=compressed src/sass/styles.sass src/css/styles.min.css
+// sass --watch --style=compressed src/sass/styles.sass src/css/style.min.css
 
-// sass --style=compressed src/sass/styles.sass src/css/styles.min.css
+section
+  margin: auto
+  text-align: center
+  background-color: $test-color
 
-//test
+.test
+  // display: block
+  display: none
