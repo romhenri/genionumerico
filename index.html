@@ -25,17 +25,16 @@
 			</div>
 		</header>
 
-		<section
-			id="gameplay"
-			class="frame-gameplay"
-			onmouseenter="playMusic()"
-		>
+		<section id="gameplay" class="frame-gameplay">
 			<!-- Texto e Interação -->
 
 			<div id="msgSpace" class="ui inline">
 				<p>
 					Adivinhe o número de 1 a 100 para vencer o gênio!
-					<i id="muteBtn" class="fas fa-volume-xmark"></i>
+					<i
+						id="muteBtn"
+						class="fas fa-volume-xmark fa-volume-high"
+					></i>
 				</p>
 			</div>
 			<div id="numberSpace" class="ui">
@@ -84,13 +83,6 @@
 						id="reloadB"
 						onclick="reload()"
 					/>
-					<input
-						type="button"
-						value="Continuar"
-						class="button"
-						id="nextB"
-						onclick="next()"
-					/>
 				</div>
 			</div>
 		</section>
@@ -113,7 +105,7 @@
 			</a>
 			|
 			<a href="https://github.com/henri2023/genio-numerico"
-				>Versão 1.5.2</a
+				>Versão 1.5.3</a
 			>
 		</footer>
 
@@ -123,6 +115,8 @@
 		</section>
 
 		<script src="src/js/script.js"></script>
+		<script src="src/js/sound-system.js"></script>
+		<script src="src/js/config-system.js"></script>
 	</body>
 </html>
 

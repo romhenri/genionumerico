@@ -3,4 +3,19 @@
 
 @mixin border($color)
   border: 2px solid $color 
-  
+
+//: Animation
+
+@mixin start 
+  animation-duration: 1s
+
+  @keyframes start 
+    0%
+      transform: scale(0.8)
+
+    80%
+      transform: scale(1.05)
+
+    100%
+      transform: scale(1)
+ 

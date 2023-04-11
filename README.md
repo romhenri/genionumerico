@@ -56,41 +56,30 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
   <img align="right" alt="pic" height="150" style="border-radius:50px;" src="https://media.discordapp.net/attachments/639956127056134178/890373478988013628/Publicacoes_Instagram_1_1.png?width=676&height=676"> -->
 </div>
 
-<!-- ### Equipe
+<hr>
 
-Agradecemos às seguintes pessoas que contribuíram para este projeto:
+### Versões
 
-<table>
-  <tr>
-    <td align="center">
-      <a href="#">
-        <img src="https://avatars3.githubusercontent.com/u/31936044" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
-        <sub>
-          <b>Iuri Silva</b>
-        </sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="#">
-        <img src="https://s2.glbimg.com/FUcw2usZfSTL6yCCGj3L3v3SpJ8=/smart/e.glbimg.com/og/ed/f/original/2019/04/25/zuckerberg_podcast.jpg" width="100px;" alt="Foto do Mark Zuckerberg"/><br>
-        <sub>
-          <b>Mark Zuckerberg</b>
-        </sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="#">
-        <img src="https://miro.medium.com/max/360/0*1SkS3mSorArvY9kS.jpg" width="100px;" alt="Foto do Steve Jobs"/><br>
-        <sub>
-          <b>Steve Jobs</b>
-        </sub>
-      </a>
-    </td>
-  </tr>
-</table> -->
+#### Versão 1.0
 
-<!-- ## 📝 Licença
+Versão inicial, número secreto entre 1 e 1.000. (HTML, CSS, JS)
 
-Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes. -->
+#### Versão 1.1
 
-<!-- [⬆ Voltar ao topo](#nome-do-projeto)<br> -->
+Versão aprimorada, incrementado sistema de contagem de tentativas para quantificar o desempenho dos jogadores. (HTML, CSS, JS)
+
+#### Versão 1.2
+
+Versão responsiva, programado para ser mobile-friendly. (CSS)
+
+#### Versão 1.3
+
+Resolução de pequenos problemas, tela de vitória e organização dos arquivos como README.md (JS)
+
+#### Versão 1.4
+
+Aprimoramento, adicionado o recurso de "record" que salva o melhor desempenho no localStorage.
+
+#### Versão 1.5
+
+Adaptação do código para uso de SASS, Organização da Arquitetura do Projeto e Música de Fundo.
