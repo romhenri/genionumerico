@@ -3,7 +3,6 @@
 @import 'old-styles.sass'
 @import 'components'
 @import 'ui/ui-gameplay'
-@import 'ui/ui-test'
 
 // sass --watch --style=compressed src/sass/styles.sass src/css/style.min.css
 
@@ -18,3 +17,19 @@ section
 
 .p
   margin: 0 !important
+
+footer 
+  font-size: 0.5em
+  color: rgba(240, 248, 255, 0.471)
+  text-align: center
+  font-style: italic
+  font: normal 15px Verdana
+  margin: 10px auto auto auto
+  max-width: 600px
+
+footer a 
+  color: rgba(240, 248, 255, 0.471)
+  transition: 0.3s
+
+  &:hover 
+    color: rgba(240, 248, 255, 0.842) 

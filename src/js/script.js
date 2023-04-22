@@ -168,7 +168,7 @@ function load() {
     
             Seu Record: ${localStorage.record} tentativas.
         
-    
+  
         `;
 		}
 	}
