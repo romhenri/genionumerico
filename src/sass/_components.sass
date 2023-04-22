@@ -45,5 +45,25 @@ button, .btn, input[type=button]
   &:active
     scale: 95%
 
+.container
+  @include flex
 
-  
+.flex
+  @include flex
+
+  &-between
+    @include flex
+    justify-content: space-between
+
+  &-center
+    @include flex
+    justify-content: center
+
+  &-around
+    @include flex
+    justify-content: space-around
+
+  &-evenly
+    @include flex
+    justify-content: space-evenly
+   

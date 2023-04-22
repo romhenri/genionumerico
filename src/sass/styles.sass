@@ -2,8 +2,8 @@
 @import 'mixins'
 @import 'old-styles.sass'
 @import 'components'
-@import 'frame-gameplay'
-@import 'frame-test'
+@import 'ui/ui-gameplay'
+@import 'ui/ui-test'
 
 // sass --watch --style=compressed src/sass/styles.sass src/css/style.min.css
 
@@ -16,10 +16,5 @@ section
   // display: block
   display: none
 
-.cht 
-  scale: 100%
-  margin-bottom: 10px
-
-  @include start
-
-  animation-name: start
+.p
+  margin: 0 !important
