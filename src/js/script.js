@@ -90,8 +90,9 @@ function play() {
 		console.log("Tentativa Nova");
 
 		if (chosenNumber > secretNumber) {
-			alert("Erro! o número escolhido é maior que a resposta.");
-			console.log("Erro! o número escolhido é maior que a resposta.");
+			alert("Erro! o número secreto é menor.");
+
+			console.log("Erro! o número secreto é menor.");
 
 			if (tries >= 5) {
 				var changeHuman = window.document.getElementById(
@@ -109,8 +110,8 @@ function play() {
 		} else if (chosenNumber < secretNumber) {
 			// Secreto > Escolhido
 
-			alert("Erro! o número escolhido é menor que a resposta.");
-			console.log("Erro! o número escolhido é menor que a resposta.");
+			alert("Erro! o número secreto é maior.");
+			console.log("Erro! o número secreto é maior.");
 
 			if (tries >= 5) {
 				var changeHuman = window.document.getElementById(
@@ -127,6 +128,16 @@ function play() {
 		}
 	}
 }
+
+// Teclas para tentar
+
+window.addEventListener("keydown", (event) => {
+	console.log(event);
+
+	if (event.key == "Enter" || event.which == "32") {
+		play();
+	}
+});
 
 // Botão de Reiniciar
 

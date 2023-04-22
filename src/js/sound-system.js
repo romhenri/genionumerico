@@ -3,6 +3,8 @@
 const muteBtn = document.getElementById("muteBtn");
 var myMusic = new Audio("src/music/turkish-beat.mp3");
 var vol = 0.1;
+myMusic.loop = "true";
+myMusic.volume = vol;
 
 //: Actions
 
