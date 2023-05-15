@@ -15,20 +15,6 @@
 
 <hr>
 
-### Ajustes e melhorias
-
-O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
-
--   [x] Reações básicas dos personagens.
--   [x] Sistema de record.
--   [x] Música de Fundo.
--   [ ] Menu.
--   [ ] Ranking.
--   [ ] Configurações
--   [ ] Animações.
-
-<hr>
-
 ### Linguagens e Tecnologias
 
 <div display="inline_block">
@@ -55,6 +41,20 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 <img align="center" alt="Csharp" height="54" width="72" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg">
   <img align="right" alt="pic" height="150" style="border-radius:50px;" src="https://media.discordapp.net/attachments/639956127056134178/890373478988013628/Publicacoes_Instagram_1_1.png?width=676&height=676"> -->
 </div>
+
+<hr>
+
+### Ajustes e melhorias
+
+O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
+
+-   [x] Reações básicas dos personagens.
+-   [x] Sistema de record.
+-   [x] Música de Fundo.
+-   [ ] Menu.
+-   [ ] Ranking.
+-   [ ] Configurações
+-   [ ] Animações.
 
 <hr>
 
